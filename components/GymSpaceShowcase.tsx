@@ -177,9 +177,9 @@ export default function GymSpaceShowcase({
         </div>
 
 
-        {/* Category Tab Bar (Horizontally Scrollable on Mobile) */}
+        {/* Category Tab Bar (Flex Wrap - Fully Visible Without Horizontal Scroll) */}
         <div className="mb-10 flex items-center justify-center">
-          <div className="flex gap-2 overflow-x-auto pb-2 pt-1 px-2 max-w-full [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex flex-wrap gap-2 sm:gap-3 justify-center max-w-5xl mx-auto px-2">
             {SHOWCASE_CATEGORIES.map((cat, idx) => {
               const IconComp = iconMap[cat.iconName] || Layers;
               const isActive = idx === activeIndex;
@@ -193,14 +193,14 @@ export default function GymSpaceShowcase({
                     setActiveIndex(idx);
                     setTimeout(() => setIsAnimating(false), 450);
                   }}
-                  className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs sm:text-sm font-extrabold border transition-all flex-shrink-0 cursor-pointer ${
+                  className={`inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-extrabold border transition-all cursor-pointer ${
                     isActive
                       ? "bg-[#6B0F1A] text-[#FFF6A3] border-[#F4E409] shadow-md scale-105"
                       : "bg-[#FFFDF5] text-[#6B0F1A] border-[#F0E2E4] hover:bg-[#FFF6A3]/40"
                   }`}
                 >
-                  <IconComp className={`w-4 h-4 ${isActive ? "text-[#F4E409]" : "text-[#6B0F1A]"}`} />
-                  <span>{cat.shortName}</span>
+                  <IconComp className={`w-4 h-4 flex-shrink-0 ${isActive ? "text-[#F4E409]" : "text-[#6B0F1A]"}`} />
+                  <span className="whitespace-normal text-left">{cat.shortName}</span>
                 </button>
               );
             })}
@@ -331,8 +331,8 @@ export default function GymSpaceShowcase({
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent pointer-events-none" />
 
                 {/* Floating Category Label */}
-                <div className="absolute bottom-4 left-4 right-4 bg-[#3D0710] text-white px-5 py-3 rounded-2xl border-2 border-[#F4E409] shadow-xl flex items-center justify-between text-sm sm:text-base font-bold tracking-wide z-10">
-                  <span className="truncate">{activeCategory.title} Space</span>
+                <div className="absolute bottom-4 left-4 right-4 bg-[#3D0710] text-white px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl border-2 border-[#F4E409] shadow-xl flex items-center justify-between text-xs sm:text-sm lg:text-base font-bold tracking-wide z-10">
+                  <span className="whitespace-normal leading-tight">{activeCategory.title} Space</span>
                   <ArrowRight className="w-5 h-5 text-[#F4E409] flex-shrink-0 ml-2" />
                 </div>
               </div>

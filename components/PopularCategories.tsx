@@ -115,7 +115,7 @@ export default function PopularCategories() {
 
           {/* Carousel Stage */}
           <div
-            className="relative h-[480px] sm:h-[520px] flex items-center justify-center touch-pan-y"
+            className="relative h-[520px] sm:h-[560px] flex items-center justify-center touch-pan-y"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
@@ -143,10 +143,10 @@ export default function PopularCategories() {
                     transform: isActive
                       ? "translateX(0%) scale(1)"
                       : isPrev
-                      ? "translateX(-75%) scale(0.35)"
-                      : "translateX(75%) scale(0.35)",
-                    opacity: isActive ? 1 : 0.5,
-                    filter: isActive ? "blur(0px)" : "blur(4px)",
+                      ? "translateX(-75%) scale(0.85)"
+                      : "translateX(75%) scale(0.85)",
+                    opacity: isActive ? 1 : 0.4,
+                    filter: isActive ? "blur(0px)" : "blur(2px)",
                     zIndex: isActive ? 10 : 1,
                     transition:
                       "transform 600ms ease, opacity 600ms ease, filter 600ms ease",
@@ -180,7 +180,7 @@ export default function PopularCategories() {
 
                     {/* Content */}
                     <div className="px-1">
-                      <h3 className="font-extrabold text-lg sm:text-xl text-[#6B0F1A] leading-snug mb-2">
+                      <h3 className="font-extrabold text-base sm:text-lg lg:text-xl text-[#6B0F1A] leading-snug mb-2 whitespace-normal break-words">
                         {cat.name}
                       </h3>
 
