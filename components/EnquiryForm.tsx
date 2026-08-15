@@ -75,7 +75,7 @@ export default function EnquiryForm({ selectedRole = "gym-owner", initialSearchV
     const activeSpaceType = formData.availableSpace || initialSearchValues?.spaceType || "Café Counter Display";
     const activeRequiredSpace = formData.requiredSpace || initialSearchValues?.spaceType || "Café Counter Display";
     const activeRackSize = formData.rackSize || initialSearchValues?.rackSize || "Small Display";
-    const activeCategory = formData.category || initialSearchValues?.category || "Packaged Snacks & Gourmet Foods";
+    const activeCategory = formData.category || initialSearchValues?.category || "Packaged Snacks & Gourmet Munchies";
 
     let roleText = "Café Owner";
     let detailsText = "";
@@ -340,12 +340,12 @@ ${detailsText}`;
                       onChange={handleChange}
                       className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
                     >
-                      <option value="Packaged Snacks & Gourmet Foods">Packaged Snacks & Gourmet Foods</option>
-                      <option value="Desserts & Chocolates">Desserts & Chocolates</option>
-                      <option value="Healthy Foods & Wellness">Healthy Foods & Wellness</option>
-                      <option value="Beverages & Cold Brews">Beverages & Cold Brews</option>
-                      <option value="Artisanal & Small-Batch Foods">Artisanal & Small-Batch Foods</option>
-                      <option value="Lifestyle & Coffee Accessories">Lifestyle & Coffee Accessories</option>
+                      <option value="Packaged Snacks & Gourmet Munchies">Packaged Snacks & Gourmet Munchies</option>
+                      <option value="Desserts & Artisanal Chocolates">Desserts & Artisanal Chocolates</option>
+                      <option value="Healthy Foods & Wellness Corner">Healthy Foods & Wellness Corner</option>
+                      <option value="Cold Brews, Kombucha & Beverage Chiller">Cold Brews, Kombucha & Beverage Chiller</option>
+                      <option value="Artisanal Pantry & Specialty Spreads">Artisanal Pantry & Specialty Spreads</option>
+                      <option value="Coffee Merchandise & Lifestyle Corner">Coffee Merchandise & Lifestyle Corner</option>
                       <option value="Ready-to-Eat Gourmet Foods">Ready-to-Eat Gourmet Foods</option>
                       <option value="Organic & Natural Products">Organic & Natural Products</option>
                       <option value="Protein & Fitness Snacks">Protein & Fitness Snacks</option>

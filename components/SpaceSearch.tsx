@@ -18,7 +18,7 @@ export default function SpaceSearch({ onSearch }: SpaceSearchProps) {
   const [location, setLocation] = useState("");
   const [spaceType, setSpaceType] = useState("Café Counter Display");
   const [rackSize, setRackSize] = useState("Small Display");
-  const [category, setCategory] = useState("Packaged Snacks & Gourmet Foods");
+  const [category, setCategory] = useState("Packaged Snacks & Gourmet Munchies");
 
 
   const handleSearchSubmit = (e: React.FormEvent) => {
