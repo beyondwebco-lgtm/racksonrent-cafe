@@ -40,6 +40,21 @@ body {
   background-color: var(--background);
   color: var(--text);
   overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Zero Horizontal Overflow & Word Wrap Safeguards */
+p, span, h1, h2, h3, h4, h5, h6, a, button, label {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Touch Target Minimum Rules for Mobile Interaction */
+@media (max-width: 1023px) {
+  button, a, input, select, textarea {
+    touch-action: manipulation;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

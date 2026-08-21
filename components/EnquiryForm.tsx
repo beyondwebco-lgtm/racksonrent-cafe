@@ -125,43 +125,43 @@ ${detailsText}`;
 
         <div className="max-w-3xl mx-auto">
           {/* Role Selector Tabs */}
-          <div className="flex flex-wrap items-center justify-center p-1.5 bg-[#FFF6A3]/30 rounded-2xl mb-8 gap-1.5 border border-[#F0E2E4] shadow-xs">
+          <div className="flex flex-wrap items-center justify-center p-1 sm:p-1.5 bg-[#FFF6A3]/30 rounded-2xl mb-6 sm:mb-8 gap-1 sm:gap-1.5 border border-[#F0E2E4] shadow-xs">
             <button
               type="button"
               onClick={() => handleRoleSelect("gym-owner")}
-              className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+              className={`flex-1 min-w-[120px] xs:min-w-[140px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer min-h-[44px] ${
                 role === "gym-owner"
                   ? "bg-[#6B0F1A] text-[#FFF6A3] shadow-xs"
                   : "text-[#6B0F1A] hover:bg-[#FFF6A3]"
               }`}
             >
-              <Store className="w-4 h-4" />
+              <Store className="w-4 h-4 flex-shrink-0" />
               <span>Café Owner</span>
             </button>
 
             <button
               type="button"
               onClick={() => handleRoleSelect("wellness")}
-              className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+              className={`flex-1 min-w-[120px] xs:min-w-[140px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer min-h-[44px] ${
                 role === "wellness"
                   ? "bg-[#6B0F1A] text-[#FFF6A3] shadow-xs"
                   : "text-[#6B0F1A] hover:bg-[#FFF6A3]"
               }`}
             >
-              <Utensils className="w-4 h-4" />
+              <Utensils className="w-4 h-4 flex-shrink-0" />
               <span>Food Entrepreneur</span>
             </button>
 
             <button
               type="button"
               onClick={() => handleRoleSelect("general")}
-              className={`flex-1 min-w-[140px] flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer ${
+              className={`flex-1 min-w-[120px] xs:min-w-[140px] flex items-center justify-center gap-1.5 sm:gap-2 py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer min-h-[44px] ${
                 role === "general"
                   ? "bg-[#6B0F1A] text-[#FFF6A3] shadow-xs"
                   : "text-[#6B0F1A] hover:bg-[#FFF6A3]"
               }`}
             >
-              <HelpCircle className="w-4 h-4" />
+              <HelpCircle className="w-4 h-4 flex-shrink-0" />
               <span>General Enquiry</span>
             </button>
           </div>
@@ -169,10 +169,10 @@ ${detailsText}`;
           {/* Form Box */}
           <form
             onSubmit={handleSubmit}
-            className="space-y-5 rounded-3xl border-2 border-[#F0E2E4] bg-[#FFFDF5] p-6 sm:p-10 shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
+            className="space-y-4 sm:space-y-5 rounded-3xl border-2 border-[#F0E2E4] bg-[#FFFDF5] p-4 xs:p-6 sm:p-10 shadow-[0_12px_35px_rgba(107,15,26,0.06)]"
           >
             {submitted && (
-              <div className="bg-[#FFF6A3] border border-[#6B0F1A]/30 text-[#6B0F1A] p-4 rounded-2xl flex items-center gap-3 text-sm font-bold">
+              <div className="bg-[#FFF6A3] border border-[#6B0F1A]/30 text-[#6B0F1A] p-3.5 sm:p-4 rounded-2xl flex items-center gap-3 text-xs sm:text-sm font-bold">
                 <CheckCircle2 className="w-5 h-5 text-[#6B0F1A] flex-shrink-0" />
                 <span>Opening WhatsApp with your enquiry details...</span>
               </div>
@@ -190,7 +190,7 @@ ${detailsText}`;
                 value={formData.fullName}
                 onChange={handleChange}
                 placeholder="e.g. Rahul Sharma"
-                className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm ${
+                className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px] ${
                   errors.fullName ? "border-red-500 bg-red-50/30" : ""
                 }`}
               />
@@ -210,7 +210,7 @@ ${detailsText}`;
                   value={formData.bakeryName}
                   onChange={handleChange}
                   placeholder="e.g. Brew House Café"
-                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm ${
+                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px] ${
                     errors.bakeryName ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -231,7 +231,7 @@ ${detailsText}`;
                   value={formData.brandName}
                   onChange={handleChange}
                   placeholder="e.g. Heavenly Cookies & Bakes"
-                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm ${
+                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px] ${
                     errors.brandName ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -252,7 +252,7 @@ ${detailsText}`;
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="7995424477"
-                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm ${
+                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px] ${
                     errors.phone ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -270,7 +270,7 @@ ${detailsText}`;
                   value={formData.city || initialSearchValues?.location || ""}
                   onChange={handleChange}
                   placeholder="e.g. Hyderabad"
-                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm ${
+                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px] ${
                     errors.city ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -290,7 +290,7 @@ ${detailsText}`;
                     name="availableSpace"
                     value={formData.availableSpace || initialSearchValues?.spaceType || "Café Counter Display"}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
+                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px]"
                   >
                     <option value="Café Counter Display">Café Counter Display</option>
                     <option value="Eye-Level Shelf">Eye-Level Shelf</option>
@@ -313,7 +313,7 @@ ${detailsText}`;
                     name="rackSize"
                     value={formData.rackSize || initialSearchValues?.rackSize || "Small — Up to 2×1 ft"}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
+                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px]"
                   >
                     <option value="Small — Up to 2×1 ft">Small — Up to 2×1 ft</option>
                     <option value="Medium — Up to 3×2 ft">Medium — Up to 3×2 ft</option>
@@ -338,7 +338,7 @@ ${detailsText}`;
                       name="category"
                       value={formData.category || initialSearchValues?.category || "Packaged Snacks & Gourmet Foods"}
                       onChange={handleChange}
-                      className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
+                      className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px]"
                     >
                       <option value="Packaged Snacks & Gourmet Munchies">Packaged Snacks & Gourmet Munchies</option>
                       <option value="Desserts & Artisanal Chocolates">Desserts & Artisanal Chocolates</option>
@@ -362,7 +362,7 @@ ${detailsText}`;
                       name="requiredSpace"
                       value={formData.requiredSpace || initialSearchValues?.spaceType || "Café Counter Display"}
                       onChange={handleChange}
-                      className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
+                      className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px]"
                     >
                       <option value="Café Counter Display">Café Counter Display</option>
                       <option value="Eye-Level Shelf">Eye-Level Shelf</option>
@@ -386,7 +386,7 @@ ${detailsText}`;
                     name="rackSize"
                     value={formData.rackSize || initialSearchValues?.rackSize || "Small — Up to 2×1 ft"}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
+                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm min-h-[44px]"
                   >
                     <option value="Small — Up to 2×1 ft">Small — Up to 2×1 ft</option>
                     <option value="Medium — Up to 3×2 ft">Medium — Up to 3×2 ft</option>
@@ -410,7 +410,7 @@ ${detailsText}`;
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Share your available café space, product category, rental preference, or any additional requirements..."
-                className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-4 py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-sm"
+                className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#6B0F1A] focus:ring-4 focus:ring-[#FFF6A3] text-xs sm:text-sm"
               />
             </div>
 
@@ -418,14 +418,14 @@ ${detailsText}`;
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#F4E409] hover:bg-[#3D0710] text-[#3D0710] hover:text-[#F4E409] border border-[#6B0F1A]/20 py-3.5 px-6 font-extrabold text-base shadow-xs transition-all cursor-pointer"
+                className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#F4E409] hover:bg-[#3D0710] text-[#3D0710] hover:text-[#F4E409] border border-[#6B0F1A]/20 py-3.5 px-5 sm:px-6 font-extrabold text-sm sm:text-base shadow-xs transition-all cursor-pointer min-h-[50px] active:scale-95"
               >
-                <MessageCircle className="w-5 h-5 fill-current" />
-                <span>Submit & Continue on WhatsApp</span>
+                <MessageCircle className="w-5 h-5 fill-current flex-shrink-0" />
+                <span className="text-center">Submit & Continue on WhatsApp</span>
               </button>
 
               <p className="text-xs text-[#5F5F5F] text-center mt-3 flex items-center justify-center gap-1 font-semibold">
-                <AlertCircle className="w-3.5 h-3.5 text-[#6B0F1A]" />
+                <AlertCircle className="w-3.5 h-3.5 text-[#6B0F1A] flex-shrink-0" />
                 <span>Your information is used only to respond to your café space enquiry.</span>
               </p>
             </div>

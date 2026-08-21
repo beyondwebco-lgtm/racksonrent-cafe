@@ -50,12 +50,12 @@ export default function Footer() {
           </Link>
 
           {/* Quick Nav */}
-          <nav className="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm font-bold">
+          <nav className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm font-bold">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-[#FFF6A3] hover:text-[#F4E409] transition-colors"
+                className="text-[#FFF6A3] hover:text-[#F4E409] transition-colors py-1 px-1.5 rounded active:scale-95"
               >
                 {link.label}
               </a>
@@ -63,34 +63,34 @@ export default function Footer() {
           </nav>
 
           {/* Direct Contact Links */}
-          <div className="flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm font-bold">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm font-bold">
             <a
               href={SITE_CONFIG.telLink}
-              className="inline-flex items-center gap-1.5 text-[#FFFDF5] hover:text-[#F4E409] transition-colors"
+              className="inline-flex items-center gap-1.5 text-[#FFFDF5] hover:text-[#F4E409] transition-colors py-1 px-1.5 rounded active:scale-95"
             >
-              <Phone className="w-4 h-4 text-[#F4E409]" />
+              <Phone className="w-4 h-4 text-[#F4E409] flex-shrink-0" />
               <span>{SITE_CONFIG.phoneDisplay}</span>
             </a>
 
-            <span className="text-[#6B0F1A]">•</span>
+            <span className="text-[#6B0F1A] hidden xs:inline">•</span>
 
             <a
               href={SITE_CONFIG.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-[#FFFDF5] hover:text-[#F4E409] transition-colors"
+              className="inline-flex items-center gap-1.5 text-[#FFFDF5] hover:text-[#F4E409] transition-colors py-1 px-1.5 rounded active:scale-95"
             >
-              <MessageCircle className="w-4 h-4 text-[#F4E409] fill-current" />
+              <MessageCircle className="w-4 h-4 text-[#F4E409] fill-current flex-shrink-0" />
               <span>WhatsApp</span>
             </a>
 
-            <span className="text-[#6B0F1A]">•</span>
+            <span className="text-[#6B0F1A] hidden xs:inline">•</span>
 
             <a
               href={SITE_CONFIG.mailtoLink}
-              className="inline-flex items-center gap-1.5 text-[#FFFDF5] hover:text-[#F4E409] transition-colors"
+              className="inline-flex items-center gap-1.5 text-[#FFFDF5] hover:text-[#F4E409] transition-colors py-1 px-1.5 rounded active:scale-95"
             >
-              <Mail className="w-4 h-4 text-[#F4E409]" />
+              <Mail className="w-4 h-4 text-[#F4E409] flex-shrink-0" />
               <span>{SITE_CONFIG.email}</span>
             </a>
           </div>
