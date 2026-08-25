@@ -22,7 +22,7 @@ export const SAMPLE_OPPORTUNITIES: OpportunityExample[] = [
     arrangement: "Monthly Café Space Rental",
     badgeText: "Featured Café",
     description: "Prime eye-level display counter inside a popular specialty café serving 500+ daily visitors.",
-    bgGradient: "from-[#3D0710] to-[#6B0F1A]"
+    bgGradient: "from-[#4A0000] to-[#650000]"
   },
   {
     id: "checkout-snack-rack",
@@ -46,7 +46,7 @@ export const SAMPLE_OPPORTUNITIES: OpportunityExample[] = [
     arrangement: "Monthly Sublet Space Arrangement",
     badgeText: "Temperature Controlled",
     description: "Chilled display layer positioned right beside the barista espresso counter.",
-    bgGradient: "from-[#3D0710] to-[#6B0F1A]"
+    bgGradient: "from-[#4A0000] to-[#650000]"
   },
   {
     id: "gourmet-pantry-wall",
