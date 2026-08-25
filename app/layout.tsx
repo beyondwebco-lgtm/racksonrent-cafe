@@ -35,14 +35,42 @@ export const metadata: Metadata = {
   authors: [{ name: "Racks on Rent", url: SITE_CONFIG.domain }],
   creator: "Racks on Rent",
   publisher: "Racks on Rent",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: ["/favicon.ico"],
+  },
   openGraph: {
     title: "Café Display Space for Rent in India | Racks on Rent",
     description:
       "Find or list unused shelves, counters, display racks, and retail spaces inside cafés across India. Racks on Rent connects café owners with food brands and entrepreneurs.",
     url: SITE_CONFIG.domain,
     siteName: "Racks on Rent",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Racks on Rent - Sublet Café Space. Share Success.",
+      },
+    ],
     locale: "en_IN",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Café Display Space for Rent in India | Racks on Rent",
+    description:
+      "Find or list unused shelves, counters, display racks, and retail spaces inside cafés across India. Racks on Rent connects café owners with food brands and entrepreneurs.",
+    images: ["/og-image.jpg"],
   },
   robots: {
     index: true,
