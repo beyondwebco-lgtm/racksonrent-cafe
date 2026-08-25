@@ -23,7 +23,7 @@ export default function FAQ() {
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#650000] md:text-5xl">
             Frequently Asked Questions
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#650000]/85 md:text-lg font-medium">
             Everything you need to know about Racks on Rent, café display spaces, and the space-sharing process.
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-5 pb-6 sm:px-6 pt-1 text-[#5F5F5F] text-sm sm:text-base leading-relaxed border-t border-[#F0E2E4] bg-[#FFFDF5] font-medium">
+                    <div className="px-5 pb-6 sm:px-6 pt-1 text-[#650000]/85 text-sm sm:text-base leading-relaxed border-t border-[#F0E2E4] bg-[#FFFDF5] font-medium">
                       {faq.answer}
                     </div>
                   </div>

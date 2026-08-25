@@ -17,7 +17,7 @@ export default function Benefits() {
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#650000] md:text-5xl">
             A Simple Win for Both Sides
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#650000]/85 md:text-lg font-medium">
             Discover how space sharing delivers immediate advantages to both café owners and food entrepreneurs.
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function Benefits() {
                 {gymOwners.points.map((point, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#650000] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm sm:text-base font-extrabold text-[#1F1F1F]">
+                    <span className="text-sm sm:text-base font-extrabold text-[#C29000]">
                       {point}
                     </span>
                   </div>
@@ -68,7 +68,7 @@ export default function Benefits() {
                 {wellnessBusinesses.points.map((point, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#650000] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm sm:text-base font-extrabold text-[#1F1F1F]">
+                    <span className="text-sm sm:text-base font-extrabold text-[#C29000]">
                       {point}
                     </span>
                   </div>

@@ -58,7 +58,7 @@ export default function SpaceSearch({ onSearch }: SpaceSearchProps) {
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
                 placeholder="e.g. Hyderabad"
-                className="w-full rounded-xl border border-[#F0E2E4] bg-white px-3 py-2.5 text-[#1F1F1F] text-xs sm:text-sm outline-none transition focus:border-[#650000] focus:ring-2 focus:ring-[#FFFBCC] font-medium min-h-[44px]"
+                className="w-full rounded-xl border border-[#F0E2E4] bg-white px-3 py-2.5 text-[#C29000] text-xs sm:text-sm outline-none transition focus:border-[#650000] focus:ring-2 focus:ring-[#FFFBCC] font-medium min-h-[44px]"
               />
             </div>
 
@@ -72,7 +72,7 @@ export default function SpaceSearch({ onSearch }: SpaceSearchProps) {
                 id="search-space-type"
                 value={spaceType}
                 onChange={(e) => setSpaceType(e.target.value)}
-                className="w-full rounded-xl border border-[#F0E2E4] bg-white px-3 py-2.5 text-[#1F1F1F] text-xs sm:text-sm outline-none transition focus:border-[#650000] focus:ring-2 focus:ring-[#FFFBCC] font-medium min-h-[44px]"
+                className="w-full rounded-xl border border-[#F0E2E4] bg-white px-3 py-2.5 text-[#C29000] text-xs sm:text-sm outline-none transition focus:border-[#650000] focus:ring-2 focus:ring-[#FFFBCC] font-medium min-h-[44px]"
               >
                 {COMPACT_SPACE_TYPES.map((st) => (
                   <option key={st.id} value={st.name}>
@@ -92,7 +92,7 @@ export default function SpaceSearch({ onSearch }: SpaceSearchProps) {
                 id="search-rack-size"
                 value={rackSize}
                 onChange={(e) => setRackSize(e.target.value)}
-                className="w-full rounded-xl border border-[#F0E2E4] bg-white px-3 py-2.5 text-[#1F1F1F] text-xs sm:text-sm outline-none transition focus:border-[#650000] focus:ring-2 focus:ring-[#FFFBCC] font-medium min-h-[44px]"
+                className="w-full rounded-xl border border-[#F0E2E4] bg-white px-3 py-2.5 text-[#C29000] text-xs sm:text-sm outline-none transition focus:border-[#650000] focus:ring-2 focus:ring-[#FFFBCC] font-medium min-h-[44px]"
               >
                 {RACK_SIZES.map((rs) => (
                   <option key={rs.id} value={rs.name}>
@@ -112,7 +112,7 @@ export default function SpaceSearch({ onSearch }: SpaceSearchProps) {
                 id="search-category"
                 value={category}
                 onChange={(e) => setCategory(e.target.value)}
-                className="w-full rounded-xl border border-[#F0E2E4] bg-white px-3 py-2.5 text-[#1F1F1F] text-xs sm:text-sm outline-none transition focus:border-[#650000] focus:ring-2 focus:ring-[#FFFBCC] font-medium min-h-[44px]"
+                className="w-full rounded-xl border border-[#F0E2E4] bg-white px-3 py-2.5 text-[#C29000] text-xs sm:text-sm outline-none transition focus:border-[#650000] focus:ring-2 focus:ring-[#FFFBCC] font-medium min-h-[44px]"
               >
                 {POPULAR_CATEGORIES.slice(0, 9).map((cat) => (
                   <option key={cat.id} value={cat.name}>

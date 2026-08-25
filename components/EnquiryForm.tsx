@@ -118,7 +118,7 @@ ${detailsText}`;
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#650000] md:text-5xl">
             Tell Us What You Are Looking For
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#650000]/85 md:text-lg font-medium">
             Choose your role, enter your café or product details, and continue directly on WhatsApp.
           </p>
         </div>
@@ -190,7 +190,7 @@ ${detailsText}`;
                 value={formData.fullName}
                 onChange={handleChange}
                 placeholder="e.g. Rahul Sharma"
-                className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
+                className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition placeholder:text-[#C29000]/60 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
                   errors.fullName ? "border-red-500 bg-red-50/30" : ""
                 }`}
               />
@@ -210,7 +210,7 @@ ${detailsText}`;
                   value={formData.bakeryName}
                   onChange={handleChange}
                   placeholder="e.g. Brew House Café"
-                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
+                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition placeholder:text-[#C29000]/60 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
                     errors.bakeryName ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -231,7 +231,7 @@ ${detailsText}`;
                   value={formData.brandName}
                   onChange={handleChange}
                   placeholder="e.g. Heavenly Cookies & Bakes"
-                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
+                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition placeholder:text-[#C29000]/60 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
                     errors.brandName ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -252,7 +252,7 @@ ${detailsText}`;
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="7995424477"
-                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
+                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition placeholder:text-[#C29000]/60 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
                     errors.phone ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -270,7 +270,7 @@ ${detailsText}`;
                   value={formData.city || initialSearchValues?.location || ""}
                   onChange={handleChange}
                   placeholder="e.g. Hyderabad"
-                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
+                  className={`w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition placeholder:text-[#C29000]/60 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px] ${
                     errors.city ? "border-red-500 bg-red-50/30" : ""
                   }`}
                 />
@@ -290,7 +290,7 @@ ${detailsText}`;
                     name="availableSpace"
                     value={formData.availableSpace || initialSearchValues?.spaceType || "Café Counter Display"}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
+                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
                   >
                     <option value="Café Counter Display">Café Counter Display</option>
                     <option value="Eye-Level Shelf">Eye-Level Shelf</option>
@@ -313,7 +313,7 @@ ${detailsText}`;
                     name="rackSize"
                     value={formData.rackSize || initialSearchValues?.rackSize || "Small — Up to 2×1 ft"}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
+                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
                   >
                     <option value="Small — Up to 2×1 ft">Small — Up to 2×1 ft</option>
                     <option value="Medium — Up to 3×2 ft">Medium — Up to 3×2 ft</option>
@@ -338,7 +338,7 @@ ${detailsText}`;
                       name="category"
                       value={formData.category || initialSearchValues?.category || "Packaged Snacks & Gourmet Foods"}
                       onChange={handleChange}
-                      className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
+                      className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
                     >
                       <option value="Packaged Snacks & Gourmet Munchies">Packaged Snacks & Gourmet Munchies</option>
                       <option value="Desserts & Artisanal Chocolates">Desserts & Artisanal Chocolates</option>
@@ -362,7 +362,7 @@ ${detailsText}`;
                       name="requiredSpace"
                       value={formData.requiredSpace || initialSearchValues?.spaceType || "Café Counter Display"}
                       onChange={handleChange}
-                      className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
+                      className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
                     >
                       <option value="Café Counter Display">Café Counter Display</option>
                       <option value="Eye-Level Shelf">Eye-Level Shelf</option>
@@ -386,7 +386,7 @@ ${detailsText}`;
                     name="rackSize"
                     value={formData.rackSize || initialSearchValues?.rackSize || "Small — Up to 2×1 ft"}
                     onChange={handleChange}
-                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
+                    className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm min-h-[44px]"
                   >
                     <option value="Small — Up to 2×1 ft">Small — Up to 2×1 ft</option>
                     <option value="Medium — Up to 3×2 ft">Medium — Up to 3×2 ft</option>
@@ -410,7 +410,7 @@ ${detailsText}`;
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Share your available café space, product category, rental preference, or any additional requirements..."
-                className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#1F1F1F] outline-none transition placeholder:text-[#5F5F5F]/70 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm"
+                className="w-full rounded-xl border border-[#F0E2E4] bg-[#FFFDF5] px-3.5 sm:px-4 py-2.5 sm:py-3 text-[#C29000] outline-none transition placeholder:text-[#C29000]/60 focus:border-[#650000] focus:ring-4 focus:ring-[#FFFBCC] text-xs sm:text-sm"
               />
             </div>
 
@@ -424,7 +424,7 @@ ${detailsText}`;
                 <span className="text-center">Submit & Continue on WhatsApp</span>
               </button>
 
-              <p className="text-xs text-[#5F5F5F] text-center mt-3 flex items-center justify-center gap-1 font-semibold">
+              <p className="text-xs text-[#650000]/85 text-center mt-3 flex items-center justify-center gap-1 font-semibold">
                 <AlertCircle className="w-3.5 h-3.5 text-[#650000] flex-shrink-0" />
                 <span>Your information is used only to respond to your café space enquiry.</span>
               </p>

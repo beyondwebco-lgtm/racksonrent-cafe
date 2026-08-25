@@ -77,7 +77,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
               </span>
             </h1>
 
-            <p className="text-sm sm:text-base lg:text-lg text-[#5F5F5F] leading-relaxed max-w-2xl font-medium">
+            <p className="text-sm sm:text-base lg:text-lg text-[#650000]/85 leading-relaxed max-w-2xl font-medium">
               Rent display space inside trusted cafés and put your food, beverage, snack, lifestyle, and specialty products directly in front of active café customers.
             </p>
 
@@ -88,7 +88,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
                   <div className="p-1.5 rounded-lg bg-[#FFFBCC] flex-shrink-0">
                     {item.icon}
                   </div>
-                  <span className="text-xs sm:text-sm font-extrabold text-[#1F1F1F] leading-tight">{item.text}</span>
+                  <span className="text-xs sm:text-sm font-extrabold text-[#C29000] leading-tight">{item.text}</span>
                 </div>
               ))}
             </div>

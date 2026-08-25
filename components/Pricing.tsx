@@ -31,7 +31,7 @@ export default function Pricing({ onSelectRole }: PricingProps) {
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#650000] md:text-5xl">
             Simple & Transparent Options
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#650000]/85 md:text-lg font-medium">
             No hidden commissions. Direct, transparent terms tailored for café owners and food entrepreneurs.
           </p>
         </div>
@@ -74,10 +74,10 @@ export default function Pricing({ onSelectRole }: PricingProps) {
                   <span className="text-4xl font-black text-[#650000]">
                     {tier.priceDisplay}
                   </span>
-                  <span className="text-sm font-bold text-[#5F5F5F] ml-2">
+                  <span className="text-sm font-bold text-[#650000]/85 ml-2">
                     / {tier.period}
                   </span>
-                  <p className="text-xs text-[#5F5F5F] mt-2 font-medium">
+                  <p className="text-xs text-[#650000]/85 mt-2 font-medium">
                     {tier.description}
                   </p>
                 </div>
@@ -86,7 +86,7 @@ export default function Pricing({ onSelectRole }: PricingProps) {
                   {tier.features.map((feat, idx) => (
                     <div key={idx} className="flex items-center gap-3">
                       <CheckCircle2 className="w-5 h-5 text-[#650000] flex-shrink-0" />
-                      <span className="text-sm font-extrabold text-[#1F1F1F]">{feat}</span>
+                      <span className="text-sm font-extrabold text-[#C29000]">{feat}</span>
                     </div>
                   ))}
                 </div>

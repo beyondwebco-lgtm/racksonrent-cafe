@@ -85,7 +85,7 @@ export default function PopularCategories() {
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#650000] md:text-5xl">
             Popular Café Product Categories
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#650000]/85 md:text-lg font-medium">
             Explore high-demand packaged foods, beverages, desserts, wellness products, artisanal goods, and lifestyle products displayed inside cafés across India.
           </p>
         </div>
@@ -184,7 +184,7 @@ export default function PopularCategories() {
                         {cat.name}
                       </h3>
 
-                      <p className="text-xs sm:text-sm text-[#5F5F5F] leading-relaxed font-medium line-clamp-2">
+                      <p className="text-xs sm:text-sm text-[#650000]/85 leading-relaxed font-medium line-clamp-2">
                         {cat.description}
                       </p>
                     </div>

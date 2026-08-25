@@ -171,7 +171,7 @@ export default function GymSpaceShowcase({
             <span className="hidden sm:inline">Choose What You Want to Display Inside a Café</span>
             <span className="sm:hidden">Explore Café Display Formats</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#650000]/85 md:text-lg font-medium">
             Explore café shelves, checkout counters, refrigerated displays, tabletop spaces, grab-and-go racks, and premium product corners inside active cafés.
           </p>
         </div>
@@ -249,7 +249,7 @@ export default function GymSpaceShowcase({
                 <h3 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#650000] leading-snug">
                   {activeCategory.title}
                 </h3>
-                <p className="mt-3 text-sm sm:text-base text-[#5F5F5F] leading-relaxed font-medium">
+                <p className="mt-3 text-sm sm:text-base text-[#650000]/85 leading-relaxed font-medium">
                   {activeCategory.description}
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function GymSpaceShowcase({
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {activeCategory.benefits.map((benefit, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-xs sm:text-sm text-[#1F1F1F] font-extrabold">
+                    <div key={idx} className="flex items-center gap-2 text-xs sm:text-sm text-[#C29000] font-extrabold">
                       <CheckCircle2 className="w-4 h-4 text-[#650000] flex-shrink-0" />
                       <span>{benefit}</span>
                     </div>
@@ -357,7 +357,7 @@ export default function GymSpaceShowcase({
                   <h4 className="text-xs font-extrabold text-[#650000] leading-tight">
                     {item.label}
                   </h4>
-                  <p className="text-[10px] text-[#5F5F5F] font-bold mt-0.5">
+                  <p className="text-[10px] text-[#650000]/85 font-bold mt-0.5">
                     {item.desc}
                   </p>
                 </div>

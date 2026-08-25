@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#650000] md:text-5xl">
             Why Choose Racks on Rent?
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#650000]/85 md:text-lg font-medium">
             We provide a transparent platform designed to simplify café display-space discovery, rental, and direct collaboration between café owners and growing brands.
           </p>
 
@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
                   <h3 className="text-xl font-black text-[#650000] mb-2.5 group-hover:text-[#4A0000] transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-[#5F5F5F] leading-relaxed font-medium">
+                  <p className="text-sm text-[#650000]/85 leading-relaxed font-medium">
                     {item.description}
                   </p>
                 </div>

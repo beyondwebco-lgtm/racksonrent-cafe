@@ -52,7 +52,7 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
                     {card.heading}
                   </h3>
 
-                  <p className="text-base text-[#5F5F5F] leading-relaxed mb-6 font-medium">
+                  <p className="text-base text-[#650000]/85 leading-relaxed mb-6 font-medium">
                     {card.text}
                   </p>
 
@@ -60,7 +60,7 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
                     {card.benefits.map((benefit, idx) => (
                       <div key={idx} className="flex items-center gap-3">
                         <CheckCircle2 className="w-5 h-5 text-[#650000] flex-shrink-0" />
-                        <span className="text-sm font-extrabold text-[#1F1F1F]">{benefit}</span>
+                        <span className="text-sm font-extrabold text-[#C29000]">{benefit}</span>
                       </div>
                     ))}
                   </div>

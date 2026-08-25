@@ -47,7 +47,7 @@ export default function HowItWorks() {
           <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#650000] md:text-5xl">
             How It Works
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#5F5F5F] md:text-lg font-medium">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#650000]/85 md:text-lg font-medium">
             Five simple steps to connect café owners with food brands, creators, and entrepreneurs looking for high-footfall retail display space.
           </p>
         </div>
@@ -73,7 +73,7 @@ export default function HowItWorks() {
                     {step.title}
                   </h3>
 
-                  <p className="text-xs text-[#5F5F5F] leading-relaxed font-medium">
+                  <p className="text-xs text-[#650000]/85 leading-relaxed font-medium">
                     {step.description}
                   </p>
                 </div>
