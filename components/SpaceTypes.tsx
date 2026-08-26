@@ -20,7 +20,14 @@ export default function SpaceTypes() {
         {/* Section Heading */}
         <SectionHeader
           badge="AVAILABLE FORMATS"
-          title="What Kind of Space Can Be Offered?"
+          title={
+            <>
+              What Kind of Space Can Be Offered{" "}
+              <span className="text-[#FAFA33] font-black drop-shadow-[0_1.5px_1.5px_rgba(101,0,0,0.4)]">
+                Inside a Busy Café?
+              </span>
+            </>
+          }
           subtitle="Explore popular café display options that suit eye-level shelves, checkout counters, refrigerated displays, and tabletop corners."
         />
 

@@ -19,7 +19,14 @@ export default function FAQ() {
         {/* Section Heading */}
         <SectionHeader
           badge="GOT QUESTIONS?"
-          title="Frequently Asked Questions"
+          title={
+            <>
+              Questions About Displaying{" "}
+              <span className="text-[#FAFA33] font-black drop-shadow-[0_1.5px_1.5px_rgba(101,0,0,0.4)]">
+                Inside a Busy Café?
+              </span>
+            </>
+          }
           subtitle="Everything you need to know about Racks on Rent, café display spaces, and the space-sharing process."
         />
 

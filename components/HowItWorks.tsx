@@ -43,7 +43,14 @@ export default function HowItWorks() {
         {/* Section Heading */}
         <SectionHeader
           badge="HOW IT WORKS"
-          title="How It Works"
+          title={
+            <>
+              How Space Sharing Works{" "}
+              <span className="text-[#FAFA33] font-black drop-shadow-[0_1.5px_1.5px_rgba(101,0,0,0.4)]">
+                Inside a Busy Café
+              </span>
+            </>
+          }
           subtitle="Five simple steps to connect café owners with food brands, creators, and entrepreneurs looking for high-footfall retail display space."
         />
 

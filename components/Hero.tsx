@@ -72,7 +72,7 @@ export default function Hero({ onSelectRole }: HeroProps) {
 
             <h1 className="text-2.5xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-[#650000] leading-[1.18]">
               Give Your Products a Place{" "}
-              <span className="bg-[#FAFA33] text-[#4A0000] px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-xl inline-block mt-1 border border-[#650000]/20 max-w-full leading-tight">
+              <span className="text-[#FAFA33] font-black drop-shadow-[0_1.5px_1.5px_rgba(101,0,0,0.4)] inline-block mt-1 max-w-full leading-tight">
                 Inside a Busy Café.
               </span>
             </h1>

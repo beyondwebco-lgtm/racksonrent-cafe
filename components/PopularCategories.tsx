@@ -81,7 +81,14 @@ export default function PopularCategories() {
         {/* Section Heading */}
         <SectionHeader
           badge="CAFÉ DISPLAY CATEGORIES"
-          title="Popular Café Product Categories"
+          title={
+            <>
+              Popular Products Displayed{" "}
+              <span className="text-[#FAFA33] font-black drop-shadow-[0_1.5px_1.5px_rgba(101,0,0,0.4)]">
+                Inside a Busy Café
+              </span>
+            </>
+          }
           subtitle="Explore high-demand packaged foods, beverages, desserts, wellness products, artisanal goods, and lifestyle products displayed inside cafés across India."
         />
 

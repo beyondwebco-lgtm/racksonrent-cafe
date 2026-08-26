@@ -114,7 +114,14 @@ ${detailsText}`;
         {/* Section Heading */}
         <SectionHeader
           badge="GET IN TOUCH"
-          title="Tell Us What You Are Looking For"
+          title={
+            <>
+              Get Space for Your Products{" "}
+              <span className="text-[#FAFA33] font-black drop-shadow-[0_1.5px_1.5px_rgba(101,0,0,0.4)]">
+                Inside a Busy Café
+              </span>
+            </>
+          }
           subtitle="Choose your role, enter your café or product details, and continue directly on WhatsApp."
         />
 

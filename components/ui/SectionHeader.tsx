@@ -61,7 +61,7 @@ export function SectionHeader({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className={`text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight ${
-          dark ? "text-white" : "text-[#3D0710]"
+          dark ? "text-white" : "text-[#650000]"
         } ${titleClassName}`}
       >
         {title}

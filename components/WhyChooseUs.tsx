@@ -18,7 +18,14 @@ export default function WhyChooseUs() {
         {/* Section Heading */}
         <SectionHeader
           badge="PLATFORM ADVANTAGES"
-          title="Why Choose Racks on Rent?"
+          title={
+            <>
+              Why Display Products{" "}
+              <span className="text-[#FAFA33] font-black drop-shadow-[0_1.5px_1.5px_rgba(101,0,0,0.4)]">
+                Inside a Busy Café?
+              </span>
+            </>
+          }
           subtitle="We provide a transparent platform designed to simplify café display-space discovery, rental, and direct collaboration between café owners and growing brands."
         />
 

@@ -80,7 +80,7 @@ export default function AboutUs() {
           badge="ABOUT US"
           title={
             <>
-              About <span className="bg-[#FAFA33] text-[#4A0000] px-3 py-0.5 rounded-xl inline-block border border-[#650000]/20">Racks on Rent</span>
+              About <span className="text-[#FAFA33] font-black drop-shadow-[0_1.5px_1.5px_rgba(101,0,0,0.4)]">Racks on Rent</span>
             </>
           }
           subtitle="Transforming Unused Commercial Space into Business Opportunities"
