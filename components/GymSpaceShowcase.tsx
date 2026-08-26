@@ -30,8 +30,9 @@ import {
   SHOWCASE_TRUST_ITEMS,
   ShowcaseCategory,
 } from "@/data/showcase";
+import SectionHeader from "@/components/ui/SectionHeader";
 
-interface GymSpaceShowcaseProps {
+export interface GymSpaceShowcaseProps {
   onSelectCategoryAction?: (
     role: "gym-owner" | "wellness",
     prefillData: { spaceType?: string; category?: string }
@@ -163,18 +164,16 @@ export default function GymSpaceShowcase({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
-        <div className="text-center max-w-3xl mx-auto mb-10">
-          <span className="inline-flex rounded-full bg-[#FFFBCC] px-4 py-1.5 text-xs sm:text-sm font-bold text-[#650000] border border-[#F0E2E4]">
-            Café Display Opportunities
-          </span>
-          <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-[#650000] md:text-5xl">
-            <span className="hidden sm:inline">Choose What You Want to Display Inside a Café</span>
-            <span className="sm:hidden">Explore Café Display Formats</span>
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#650000]/85 md:text-lg font-medium">
-            Explore café shelves, checkout counters, refrigerated displays, tabletop spaces, grab-and-go racks, and premium product corners inside active cafés.
-          </p>
-        </div>
+        <SectionHeader
+          badge="CAFÉ DISPLAY OPPORTUNITIES"
+          title={
+            <>
+              <span className="hidden sm:inline">Choose What You Want to Display Inside a Café</span>
+              <span className="sm:hidden">Explore Café Display Formats</span>
+            </>
+          }
+          subtitle="Explore café shelves, checkout counters, refrigerated displays, tabletop spaces, grab-and-go racks, and premium product corners inside active cafés."
+        />
 
 
         {/* Category Tab Bar (Flex Wrap - Fully Visible Without Horizontal Scroll) */}
