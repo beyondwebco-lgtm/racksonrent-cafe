@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Zap, Users, Building, Shield, Store, TrendingUp, Sparkles, Award } from "lucide-react";
+import { Zap, Users, Building, Shield, TrendingUp, Sparkles, Award } from "lucide-react";
 import { FeatureItem } from "@/data/howItWorksData";
 
 interface FeatureHighlightsProps {

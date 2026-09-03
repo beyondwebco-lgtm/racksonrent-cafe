@@ -18,28 +18,24 @@ export default function HowItWorksPage({
   data = defaultHowItWorksData,
 }: HowItWorksPageProps) {
   const searchParams = useSearchParams();
-  const [activeRole, setActiveRole] = useState<"owner" | "brand">("owner");
+  const roleParam = searchParams.get("role");
+  const [userSelectedRole, setUserSelectedRole] = useState<"owner" | "brand" | null>(null);
+  const activeRole: "owner" | "brand" =
+    userSelectedRole ?? (roleParam === "brand" ? "brand" : "owner");
+  const setActiveRole = (role: "owner" | "brand") => setUserSelectedRole(role);
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   useEffect(() => {
-    const roleParam = searchParams.get("role");
-    if (roleParam === "brand") {
-      setActiveRole("brand");
-      scrollToJourney();
-    } else if (roleParam === "owner" || roleParam === "bunk-owner") {
-      setActiveRole("owner");
-      scrollToJourney();
+    if (roleParam) {
+      const timer = setTimeout(() => {
+        const element = document.getElementById("explore-journey");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+      return () => clearTimeout(timer);
     }
-  }, [searchParams]);
-
-  const scrollToJourney = () => {
-    setTimeout(() => {
-      const element = document.getElementById("explore-journey");
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }, 100);
-  };
+  }, [roleParam]);
 
   const currentRoleData =
     activeRole === "owner" ? data.spaceOwner : data.brand;
