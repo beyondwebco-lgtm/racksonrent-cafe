@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" fill="#FFFDF5"/>
+  <rect x="30" y="30" width="1140" height="740" rx="32" fill="#FFFFFF" stroke="#F0E2E4" stroke-width="4"/>
+  <rect x="60" y="60" width="1080" height="90" rx="20" fill="#650000"/>
+  <text x="600" y="115" font-family="sans-serif" font-size="32" font-weight="900" fill="#FFFBCC" text-anchor="middle">BRANDS &amp; STARTUPS JOURNEY — STEP-BY-STEP INFOGRAPHIC</text>
+  
+  <!-- Step 1 -->
+  <rect x="80" y="190" width="320" height="230" rx="20" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+  <circle cx="130" cy="240" r="30" fill="#650000"/>
+  <text x="130" y="250" font-family="sans-serif" font-size="24" font-weight="900" fill="#FAFA33" text-anchor="middle">1</text>
+  <text x="180" y="245" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Browse Locations</text>
+  <text x="100" y="295" font-family="sans-serif" font-size="15" fill="#5F5F5F">Filter prime spaces by</text>
+  <text x="100" y="320" font-family="sans-serif" font-size="15" fill="#5F5F5F">footfall &amp; customer demographics.</text>
+
+  <!-- Step 2 -->
+  <rect x="440" y="190" width="320" height="230" rx="20" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+  <circle cx="490" cy="240" r="30" fill="#650000"/>
+  <text x="490" y="250" font-family="sans-serif" font-size="24" font-weight="900" fill="#FAFA33" text-anchor="middle">2</text>
+  <text x="540" y="245" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Select Display Spot</text>
+  <text x="460" y="295" font-family="sans-serif" font-size="15" fill="#5F5F5F">Choose shelf, rack, counter,</text>
+  <text x="460" y="320" font-family="sans-serif" font-size="15" fill="#5F5F5F">or floor unit.</text>
+
+  <!-- Step 3 -->
+  <rect x="800" y="190" width="320" height="230" rx="20" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+  <circle cx="850" cy="240" r="30" fill="#650000"/>
+  <text x="850" y="250" font-family="sans-serif" font-size="24" font-weight="900" fill="#FAFA33" text-anchor="middle">3</text>
+  <text x="900" y="245" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Book Space</text>
+  <text x="820" y="295" font-family="sans-serif" font-size="15" fill="#5F5F5F">Reserve flexible rental</text>
+  <text x="820" y="320" font-family="sans-serif" font-size="15" fill="#5F5F5F">terms online instantly.</text>
+
+  <!-- Step 4 -->
+  <rect x="80" y="460" width="320" height="230" rx="20" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+  <circle cx="130" cy="510" r="30" fill="#650000"/>
+  <text x="130" y="520" font-family="sans-serif" font-size="24" font-weight="900" fill="#FAFA33" text-anchor="middle">4</text>
+  <text x="180" y="515" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Stock Products</text>
+  <text x="100" y="565" font-family="sans-serif" font-size="15" fill="#5F5F5F">Deliver packaged inventory</text>
+  <text x="100" y="590" font-family="sans-serif" font-size="15" fill="#5F5F5F">&amp; eye-catching signage.</text>
+
+  <!-- Step 5 -->
+  <rect x="440" y="460" width="320" height="230" rx="20" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+  <circle cx="490" cy="510" r="30" fill="#650000"/>
+  <text x="490" y="520" font-family="sans-serif" font-size="24" font-weight="900" fill="#FAFA33" text-anchor="middle">5</text>
+  <text x="540" y="515" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Gain Visibility</text>
+  <text x="460" y="565" font-family="sans-serif" font-size="15" fill="#5F5F5F">Engage captive in-store</text>
+  <text x="460" y="590" font-family="sans-serif" font-size="15" fill="#5F5F5F">shoppers daily.</text>
+
+  <!-- Step 6 -->
+  <rect x="800" y="460" width="320" height="230" rx="20" fill="#FFFDF5" stroke="#F0E2E4" stroke-width="2"/>
+  <circle cx="850" cy="510" r="30" fill="#650000"/>
+  <text x="850" y="520" font-family="sans-serif" font-size="24" font-weight="900" fill="#FAFA33" text-anchor="middle">6</text>
+  <text x="900" y="515" font-family="sans-serif" font-size="20" font-weight="800" fill="#650000">Scale Offline</text>
+  <text x="820" y="565" font-family="sans-serif" font-size="15" fill="#5F5F5F">Track retail sales &amp;</text>
+  <text x="820" y="590" font-family="sans-serif" font-size="15" fill="#5F5F5F">expand across multiple venues.</text>
+</svg>

@@ -10,6 +10,13 @@
   --color-muted-text: #650000;
   --color-soft-border: #F0E2E4;
 
+  --color-brand-maroon: #650000;
+  --color-soft-yellow: #FFFBCC;
+  --color-bright-yellow: #FAFA33;
+  --color-bg-cream: #FFFDF5;
+  --color-border-color: #F0E2E4;
+  --color-text-grey: #5F5F5F;
+
   --font-manrope: var(--font-manrope), sans-serif;
 }
 
